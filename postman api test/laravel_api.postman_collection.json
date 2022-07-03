@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "c1f8aa9c-cdda-4d93-baa9-ab8d6e36c446",
+		"name": "laravel_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/signUp",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test5",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test5@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "test",
+							"description": "test",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "test123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signUp",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test5@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "device_type",
+							"value": "test",
+							"description": "test",
+							"type": "text"
+						},
+						{
+							"key": "device_token",
+							"value": "mBo3RxOmjdDE8sVQXzw37ABND9DBcX2zPYu8EtRk",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/addwallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "first data",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "first wallet amount store",
+							"type": "text"
+						},
+						{
+							"key": "balance",
+							"value": "200",
+							"type": "text"
+						},
+						{
+							"key": "holder_type",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "Second Data",
+							"type": "text"
+						},
+						{
+							"key": "card_number",
+							"value": "4242424242424242",
+							"type": "text"
+						},
+						{
+							"key": "exp_month",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "exp_year",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "cvc",
+							"value": "256",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "589",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/addwallet",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addwallet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
